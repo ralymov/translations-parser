@@ -1,0 +1,33 @@
+{
+  "name": "icobox/translations-parser",
+  "type": "library",
+  "description": "Laravel translations-parser package",
+  "authors": [
+    {
+      "name": "icobox"
+    }
+  ],
+  "require": {
+    "r-alymov/php-html-parser": "^1.7.2",
+    "google/apiclient": "^2.0",
+    "laravel/framework": "5.6.*"
+  },
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "git@github.com:R-Alymov/php-html-parser.git"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Icobox\\TranslationsParser\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Icobox\\TranslationsParser\\ServiceProvider"
+      ]
+    }
+  }
+}
